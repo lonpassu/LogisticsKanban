@@ -1,0 +1,111 @@
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.df {
+  display: flex;
+}
+
+.df-fc {
+  flex-direction: column;
+}
+
+.df-jc {
+  justify-content: center;
+}
+
+.df-js {
+  justify-content: space-between;
+}
+
+.df-ac {
+  align-items: center;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+// 超出两行隐藏
+.text-over-two {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; //（行数）
+  -webkit-box-orient: vertical;
+}
+
+// 超出一行隐藏
+.text-over-one {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 首页标题
+.home-title {
+  padding: 0 0px 12px;
+  border-bottom: 1px solid #d6d6d6;
+  h1 {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    margin-left: 20px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 5px;
+      background: #358eff;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+}
